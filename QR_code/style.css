@@ -1,13 +1,20 @@
+:root {
+  --main--bg--color: hsl(0, 0%, 100%);
+  --second--bg--color: hsl(212, 45%, 89%);
+  --attribution--a: hsl(228, 45%, 44%);
+  --text--bold--color:  hsl(218, 44%, 22%);
+  --text--light--color: hsl(216, 15%, 48%);
+}
 .attribution {
   font-size: 0.6em;
   text-align: center;
   margin-block-start: 1.25em;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--attribution--a);
 }
 body {
-  background-color: hsl(212, 45%, 89%);
+  background-color: var(--second--bg--color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +23,7 @@ body {
 
 }
 section {
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--main--bg--color);
   margin-block-start: 6.25em;
   display: flex;
   flex-direction: column;
@@ -37,11 +44,11 @@ img {
 }
 .bold {
   font-weight: 700;
-  color: hsl(218, 44%, 22%);
+  color: var(--text--bold--color);
 }
 .light {
   font-weight: 400;
-  color: hsl(216, 15%, 48%);
+  color: var(--text--light--color);
 }
 @media (max-width: 30em) {
   .qrcode {
