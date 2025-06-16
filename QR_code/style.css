@@ -1,7 +1,7 @@
 .attribution {
   font-size: 0.6em;
   text-align: center;
-  margin-top: 1.25em;
+  margin-block-start: 1.25em;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -17,7 +17,7 @@ body {
 }
 section {
   background-color: hsl(0, 0%, 100%);
-  margin-top: 6.25em;
+  margin-block-start: 6.25em;
   display: flex;
   flex-direction: column;
   border-radius: 1.25em;
@@ -29,7 +29,7 @@ img {
   border-radius: 0.62em;
   width: 18em;
   height: 18em;
-  margin-top: 1.25em;
+  margin-block-start: 1.25em;
 }
 .qrcode {
   text-align: center;
@@ -45,9 +45,9 @@ img {
 }
 @media (max-width: 30em) {
   .qrcode {
-    margin-top: 6.25em;
-    margin-left: 1.68em;
-    margin-right: 1.68em;
+    margin-block-start: 6.25em;
+    margin-inline-start: 1.68em;
+    margin-inline-end: 1.68em;
     /* margin-bottom: 156px; */
   }
 }
