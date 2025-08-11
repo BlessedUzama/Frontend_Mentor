@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: "figtree";
+  src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+:root {
+  --main-bg-color: hsl(47, 88%, 63%);
+  --secondary-bg-color: hsl(0, 0%, 100%);
+  --text-color-light: hsl(0, 0%, 42%);
+  --text-color-dark: hsl(0, 0%, 7%);
+}
+body {
+  background-color: var(--main-bg-color);
+  font-family: "figtree";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+.main {
+  background-color: var(--secondary-bg-color);
+  max-width: 23.4rem;
+  width: 100%;
+  border-radius: 1.25rem;
+  box-shadow: 8px 8px 0 hsl(0, 0%, 7%);
+  
+}
+.card {
+  width: 100%;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  box-sizing: border-box;
+  height: 12.5rem;
+  object-fit: cover;
+  border-radius: 0.625rem;
+}
+h1 {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color: var(--main-bg-color);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-left: 1.5rem;
+  margin-right: 13.375rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-color-dark);
+}
+.first {
+  margin-left: 1.5rem;
+  font-size: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  margin-left: 1.5rem;
+  color: var(--text-color-dark);
+  font-weight: 800;
+}
+h2:hover {
+  color: var(--main-bg-color);
+}
+.second {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--text-color-light);
+  line-height: 150%;
+}
+.avatar {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.avatar img {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1.5rem;
+}
+.avatar p {
+  padding-top: 0.34rem;
+  padding-bottom: 0.34rem;
+  font-weight: 800;
+}
+.attribution {
+   font-size: 11px;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--text-color-light);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 23.43rem) {
+  /* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  } */
+}
