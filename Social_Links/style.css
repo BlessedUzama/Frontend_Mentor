@@ -28,6 +28,7 @@ img {
 .intro {
     text-align: center;
     background-color: var(--Grey-800);
+    border-radius: 1rem;
 }
 h1 {
   color: var(--White);
