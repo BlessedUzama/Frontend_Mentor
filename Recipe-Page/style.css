@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* ✅ Prevents overflow issues */
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+}
+
+@font-face {
+  font-family: "Young Serif";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+body {
+  background-color: var(--Rose-50);
+  padding: 2rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden; /* ✅ removes horizontal scroll */
+}
+
+.container {
+  background-color: var(--White);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  max-width: 46rem;  /* ✅ centered, but responsive */
+  width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+  display: block; /* ✅ prevents small overflow bugs */
+}
+
+h1 {
+  margin: 1rem;
+  font-family: "Young Serif";
+}
+
+.para {
+  margin: 1rem;
+  color: var(--Stone-900);
+}
+
+.prep-time {
+  margin: 1rem;
+  padding: 2rem;
+  background-color: var(--Rose-50);
+  border-radius: 1rem;
+  color: var(--Stone-900);
+}
+
+.prep-time li {
+  margin: 0.5rem;
+}
+
+li {
+  padding-left: 1rem;
+  font-family: "Outfit";
+}
+
+.prep-time li::marker {
+  color: var(--Rose-800);
+}
+
+h3 {
+  color: var(--Rose-800);
+}
+
+h2 {
+  margin: 1rem;
+  color: var(--Brown-800);
+  font-family: "Young Serif";
+}
+
+.same {
+  border-bottom: 1px solid var(--Stone-900);
+  width: 100%;
+  margin: 10px 0;
+}
+
+.same li {
+  margin: 0.5rem;
+  color: var(--Stone-900);
+}
+
+.same li:last-child {
+  margin-bottom: 1.5rem;
+}
+
+.same li::marker {
+  color: var(--Brown-800);
+}
+
+#num li::marker {
+  font-weight: bold;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.table p {
+  border-bottom: 1px solid var(--Stone-900);
+  margin: 10px 0;
+  padding: 1rem;
+}
+
+p {
+  font-family: "Outfit";
+}
+
+.bold {
+  color: var(--Brown-800);
+  font-weight: bold;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* ✅ Tablet */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  img {
+    border-radius: 0.5rem;
+  }
+}
+
+/* ✅ Mobile (375px and below) */
+@media (max-width: 23.43rem) {
+  body {
+    padding: 0;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 1rem;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  img {
+    border-radius: 0;
+  }
+}
