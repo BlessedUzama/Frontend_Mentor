@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blessed - CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+        color: #1f2937;
+      }
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        background: white;
+        margin: 2rem auto;
+        padding: 12mm 15mm;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
+      @media print {
+        body {
+          background: white;
+          margin: 0;
+        }
+        .page {
+          margin: 0;
+          box-shadow: none;
+          width: 100%;
+        }
+        .no-print {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <div class="page text-sm">
+      <header class="mb-8 border-b-2 border-gray-200 pb-6">
+        <h1 class="text-4xl font-bold text-gray-900 tracking-tight mb-1">
+          Blessed
+        </h1>
+        <h2 class="text-xl text-blue-600 font-medium mb-4">
+          Frontend Web Developer
+        </h2>
+        <p class="text-gray-600 leading-relaxed max-w-3xl text-sm">
+          Dedicated software engineer with a strong foundation in frontend
+          development. Focused on creating solutions to everyday problems,
+          building highly responsive web applications, and constantly learning
+          new technologies to produce quality work.
+        </p>
+      </header>
+
+      <div class="grid grid-cols-12 gap-8">
+        <div class="col-span-4 space-y-8">
+          <section>
+            <ul class="space-y-3 text-gray-600 text-xs">
+              <li class="flex items-center gap-3">
+                <i class="fas fa-envelope text-blue-600 w-4"></i>
+                <a
+                  href="mailto:Uzamablessed@gmail.com"
+                  class="hover:text-blue-600"
+                  >Uzamablessed@gmail.com</a
+                >
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fas fa-phone text-blue-600 w-4"></i>
+                <span>+2349022422926</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fas fa-map-marker-alt text-blue-600 w-4"></i>
+                <span>Benin City, Edo, Nigeria</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fab fa-linkedin text-blue-600 w-4"></i>
+                <a
+                  href="https://www.linkedin.com/in/blessed-uzama/"
+                  class="hover:text-blue-600"
+                  >linkedin.com/in/blessed</a
+                >
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fab fa-github text-blue-600 w-4"></i>
+                <a
+                  href="https://github.com/BlessedUzama"
+                  class="hover:text-blue-600"
+                  >github.com/BlessedUzama</a
+                >
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fas fa-globe text-blue-600 w-4"></i>
+                <a href="#" class="hover:text-blue-600"
+                  >your-portfolio-link.com</a
+                >
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h3
+              class="text-sm font-bold text-gray-900 uppercase tracking-wider mb-4 border-b pb-1"
+            >
+              Skills & Tools
+            </h3>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded"
+                >JavaScript</span
+              >
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded"
+                >React.js</span
+              >
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded"
+                >Vue.js</span
+              >
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded"
+                >Tailwind CSS</span
+              >
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded"
+                >Vite</span
+              >
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded"
+                >HTML5</span
+              >
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded"
+                >CSS3</span
+              >
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded"
+                >Git & GitHub</span
+              >
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded"
+                >Paystack API</span
+              >
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded"
+                >Responsive Web Design</span
+              >
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded"
+                >API Integration</span
+              >
+            </div>
+          </section>
+
+          <section>
+            <h3
+              class="text-sm font-bold text-gray-900 uppercase tracking-wider mb-4 border-b pb-1"
+            >
+              Education
+            </h3>
+            <div class="mb-3">
+              <h4 class="font-semibold text-gray-900">BSc Computer Science</h4>
+              <p class="text-xs text-gray-600">ESTAG University</p>
+              <p class="text-xs text-gray-400 italic mb-2">2022 - 2025</p>
+              <p class="text-xs text-gray-600 font-medium">Core Courses:</p>
+              <ul class="text-xs text-gray-600 list-disc list-inside ml-1 mt-1">
+                <li>Website Development</li>
+                <li>Data Structures</li>
+                <li>Object-Oriented Programming</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h3
+              class="text-sm font-bold text-gray-900 uppercase tracking-wider mb-4 border-b pb-1"
+            >
+              Languages
+            </h3>
+            <div class="space-y-2 text-xs">
+              <div>
+                <span class="font-semibold text-gray-900">English</span>
+                <p class="text-gray-500">Full Professional</p>
+              </div>
+              <div>
+                <span class="font-semibold text-gray-900">German</span>
+                <p class="text-gray-500">Elementary Proficiency</p>
+              </div>
+              <div>
+                <span class="font-semibold text-gray-900">Edo / Pidgin</span>
+                <p class="text-gray-500">Native / Bilingual</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="col-span-8 space-y-8">
+          <section>
+            <h3
+              class="text-sm font-bold text-gray-900 uppercase tracking-wider mb-4 border-b pb-1"
+            >
+              Training & Experience
+            </h3>
+
+            <div class="mb-5">
+              <div class="flex justify-between items-start mb-1">
+                <h4 class="font-bold text-gray-900 text-base">
+                  Frontend Engineering Student
+                </h4>
+                <span class="text-xs text-gray-500 font-medium">2025</span>
+              </div>
+              <p class="text-xs text-gray-800 font-medium mb-2">
+                AltSchool Africa
+              </p>
+              <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+                <li>
+                  Engaged in an intensive 1-year diploma program specializing in
+                  modern frontend technologies, React, and responsive web
+                  design.
+                </li>
+                <li>
+                  Developed and deployed multiple interactive web applications,
+                  adhering to industry best practices and accessibility
+                  standards.
+                </li>
+              </ul>
+            </div>
+
+            <div class="mb-4">
+              <div class="flex justify-between items-start mb-1">
+                <h4 class="font-bold text-gray-900 text-base">
+                  Software Engineering Trainee
+                </h4>
+                <span class="text-xs text-gray-500 font-medium">2024</span>
+              </div>
+              <p class="text-xs text-gray-800 font-medium mb-2">ALX Africa</p>
+              <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+                <li>
+                  Completed a rigorous 1-year software engineering program
+                  focused on algorithms, systems engineering, and full-stack
+                  development.
+                </li>
+                <li>
+                  Collaborated within remote, agile teams to build scalable
+                  applications and solve complex technical challenges.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h3
+              class="text-sm font-bold text-gray-900 uppercase tracking-wider mb-4 border-b pb-1"
+            >
+              Technical Projects
+            </h3>
+
+            <div class="mb-5">
+              <div class="flex justify-between items-start mb-1">
+                <a
+                  href="https://e-commerce-store-sepia-pi.vercel.app/"
+                  target="_blank"
+                  class="font-bold text-gray-900 text-base hover:text-blue-600 transition-colors flex items-center gap-2"
+                >
+                  E-Commerce Storefront
+                  <i class="fas fa-external-link-alt text-xs text-gray-400"></i>
+                </a>
+              </div>
+              <p class="text-xs text-gray-500 mb-2 italic">
+                React, Vite, Context API, Tailwind, Paystack
+              </p>
+              <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+                <li>
+                  Implemented global state management utilizing React's Context
+                  API to handle shopping cart logic and user sessions
+                  seamlessly.
+                </li>
+                <li>
+                  Integrated the Paystack payment gateway to process secure and
+                  reliable customer transactions.
+                </li>
+              </ul>
+            </div>
+
+            <div class="mb-5">
+              <div class="flex justify-between items-start mb-1">
+                <a
+                  href="https://capstone-project-alpha-six.vercel.app/"
+                  target="_blank"
+                  class="font-bold text-gray-900 text-base hover:text-blue-600 transition-colors flex items-center gap-2"
+                >
+                  Currency Converter Capstone
+                  <i class="fas fa-external-link-alt text-xs text-gray-400"></i>
+                </a>
+              </div>
+              <p class="text-xs text-gray-500 mb-2 italic">
+                JavaScript, External APIs, HTML, CSS
+              </p>
+              <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+                <li>
+                  Developed a dynamic currency converter application as a
+                  capstone project.
+                </li>
+                <li>
+                  Integrated external APIs for real-time exchange rates and
+                  implemented interactive data-handling features.
+                </li>
+              </ul>
+            </div>
+
+            <div class="mb-5">
+              <div class="flex justify-between items-start mb-1">
+                <a
+                  href="https://markdown-preview-vue-eight.vercel.app/"
+                  target="_blank"
+                  class="font-bold text-gray-900 text-base hover:text-blue-600 transition-colors flex items-center gap-2"
+                >
+                  Vue.js SPA Suite
+                  <i class="fas fa-external-link-alt text-xs text-gray-400"></i>
+                </a>
+              </div>
+              <p class="text-xs text-gray-500 mb-2 italic">
+                Vue.js, JavaScript, Tailwind CSS
+              </p>
+              <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+                <li>
+                  Built a collection of dynamic web applications using Vue.js,
+                  including a content blog and a real-time markdown previewer.
+                </li>
+                <li>
+                  Demonstrated proficiency in component-based architecture and
+                  reactive state management.
+                </li>
+              </ul>
+            </div>
+
+            <div class="mb-4">
+              <div class="flex justify-between items-start mb-1">
+                <a
+                  href="https://frontend-mentor-recipe-page-lake.vercel.app/"
+                  target="_blank"
+                  class="font-bold text-gray-900 text-base hover:text-blue-600 transition-colors flex items-center gap-2"
+                >
+                  Frontend Mentor Solutions
+                  <i class="fas fa-external-link-alt text-xs text-gray-400"></i>
+                </a>
+              </div>
+              <p class="text-xs text-gray-500 mb-2 italic">
+                HTML, CSS, JavaScript
+              </p>
+              <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+                <li>
+                  Completed multiple responsive web design challenges,
+                  translating complex UI/UX designs into pixel-perfect,
+                  accessible code.
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
